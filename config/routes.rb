@@ -51,6 +51,7 @@ Myapp::Application.routes.draw do
   get "appviews/blog"
   get "appviews/article"
   get "appviews/issue_tracker"
+  get "appviews/insurance"
 
   get "pages/search_results"
   get "pages/lockscreen"
