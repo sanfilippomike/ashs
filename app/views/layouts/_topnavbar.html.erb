@@ -5,27 +5,81 @@
                 <a class = "navbar-brand" href="<%= url_for :controller => 'pages', :action => 'login_2' %>">
                 <img alt="image" class="img-responsive" src="<%= image_path('ucm4.svg') %>"/>
                 </a>
-           <a class="navbar-toggle collapsed btn btn-primary " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars"></i> </a>
         </div>
-       <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-top-links navbar-right">
-
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>" />
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right">46h ago</small>
+                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br/>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="<%= image_path('a4.jpg') %>" />
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right text-navy">5h ago</small>
+                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br/>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="#" class="pull-left">
+                                <img alt="image" class="img-circle" src="<%= image_path('profile.jpg') %>" />
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right">23h ago</small>
+                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br/>
+                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                </a>
+
+            </li>
+ 
+    
+          <li class="dropdown">
+                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> About item <span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="">Menu item</a></li>
+                    <li><a href="">Menu item</a></li>
+                    <li><a href="">Menu item</a></li>
+                    <li><a href="">Menu item</a></li>
+                </ul>
+            </li>
+
+               <li><a href=""><i class="fa fa-envelope fa-fw"></i> Contact </a></li>
+    </ul>
 
 
 
