@@ -2,70 +2,11 @@
     <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
         <div class="navbar-header">
-                <a class = "navbar-brand" href="<%= url_for :controller => 'pages', :action => 'login_2' %>">
+                <a class = "navbar-brand" href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">
                 <img alt="image" class="img-responsive" src="<%= image_path('ucm4.svg') %>"/>
                 </a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li class="dropdown">
-                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                    <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
-                </a>
-                <ul class="dropdown-menu dropdown-messages">
-                    <li>
-                        <div class="dropdown-messages-box">
-                            <a href="#" class="pull-left">
-                                <img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>" />
-                            </a>
-                            <div class="media-body">
-                                <small class="pull-right">46h ago</small>
-                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br/>
-                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <div class="dropdown-messages-box">
-                            <a href="#" class="pull-left">
-                                <img alt="image" class="img-circle" src="<%= image_path('a4.jpg') %>" />
-                            </a>
-                            <div class="media-body ">
-                                <small class="pull-right text-navy">5h ago</small>
-                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br/>
-                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <div class="dropdown-messages-box">
-                            <a href="#" class="pull-left">
-                                <img alt="image" class="img-circle" src="<%= image_path('profile.jpg') %>" />
-                            </a>
-                            <div class="media-body ">
-                                <small class="pull-right">23h ago</small>
-                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br/>
-                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <div class="text-center link-block">
-                            <a href="#">
-                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
-                </a>
-
-            </li>
  
     
           <li class="dropdown">
@@ -80,7 +21,7 @@
 
 
           <li class="dropdown">
-                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Services <span class="caret"></span></a>
+                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-stethoscope fa-fw"></i> Services <span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu">
                     <li><a href="">Menu item</a></li>
                     <li><a href="">Menu item</a></li>
@@ -92,9 +33,11 @@
 
 
           <li class="dropdown">
-                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Insurance <span class="caret"></span></a>
+            <%= link_to insurance_path, :class => "whitelink" do %>
+                  <i class="fa fa-plus-square fa-fw"></i> Insurance <span class="caret"></span></a>
+                  <% end %> 
                 <ul role="menu" class="dropdown-menu">
-                    <li><a href="">Menu item</a></li>
+                    <li><%= link_to "Insurance", insurance_path %></li>
                     <li><a href="">Menu item</a></li>
                     <li><a href="">Menu item</a></li>
                     <li><a href="">Menu item</a></li>
@@ -103,7 +46,7 @@
 
 
           <li class="dropdown">
-                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Resources <span class="caret"></span></a>
+                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit fa-fw"></i> Resources <span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu">
                     <li><a href="">Menu item</a></li>
                     <li><a href="">Menu item</a></li>

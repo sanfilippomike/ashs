@@ -20,6 +20,7 @@
   #page-wrapper {
     padding-top: 50px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -27,13 +28,14 @@
     position: inherit;
     margin: 0 0 0 0px;
     min-height: 1000px;
-    padding-top: 120px;
+    padding-top: 110px;
   }
   .body-small .navbar-static-side {
     display: none;
     z-index:2001;
     position: absolute;
     width: 70px;
+    padding-top: 110px;
   }
   .body-small.mini-navbar .navbar-static-side {
     display: block;
