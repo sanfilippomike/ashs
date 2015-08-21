@@ -105,5 +105,5 @@ Myapp::Application.routes.draw do
   get "landing/index"
 
   match "/insurance" => "appviews#insurance", via: [:get, :post]
-
+  match "/waiver" => "appviews#waiver", via: [:get, :post]
 end
