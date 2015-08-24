@@ -107,4 +107,5 @@ Myapp::Application.routes.draw do
   match "/insurance" => "appviews#insurance", via: [:get, :post]
   match "/waiver" => "appviews#waiver", via: [:get, :post]
   match "/search" => "appviews#search", via: [:get, :post]
+  match "/contact" => "appviews#contact", via: [:get, :post]
 end
