@@ -115,4 +115,5 @@ Myapp::Application.routes.draw do
   match "/aca" => "appviews#aca", via: [:get, :post]
   match "/about" => "appviews#about", via: [:get, :post]
   match "/appointments" => "appviews#appointments", via: [:get, :post]
+  match "/meetthestaff" => "appviews#meetthestaff", via: [:get, :post]
 end
