@@ -135,7 +135,7 @@ Myapp::Application.routes.draw do
   match "/onlineresources" => "appviews#onlineresources", via: [:get, :post]
   match "/flu" => "appviews#flu", via: [:get, :post]
   match "/alerts" => "appviews#alerts", via: [:get, :post]
-
+  match "/parents" => "appviews#parents", via: [:get, :post]
 
 
 
