@@ -128,6 +128,13 @@ Myapp::Application.routes.draw do
   match "/womenshealth" => "appviews#womenshealth", via: [:get, :post]
   match "/menshealth" => "appviews#menshealth", via: [:get, :post]
   match "/travelclinic" => "appviews#travelclinic", via: [:get, :post]
+  match "/newstudents" => "appviews#newstudents", via: [:get, :post]
+  match "/formscenter" => "appviews#formscenter", via: [:get, :post]
+  match "/emergency" => "appviews#emergency", via: [:get, :post]
+  match "/ncha" => "appviews#ncha", via: [:get, :post]
+  match "/onlineresources" => "appviews#onlineresources", via: [:get, :post]
+  match "/flu" => "appviews#flu", via: [:get, :post]
+  match "/alerts" => "appviews#alerts", via: [:get, :post]
 
 
 
