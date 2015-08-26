@@ -127,7 +127,7 @@ Myapp::Application.routes.draw do
   match "/adhd" => "appviews#adhd", via: [:get, :post]
   match "/womenshealth" => "appviews#womenshealth", via: [:get, :post]
   match "/menshealth" => "appviews#menshealth", via: [:get, :post]
-
+  match "/travelclinic" => "appviews#travelclinic", via: [:get, :post]
 
 
 

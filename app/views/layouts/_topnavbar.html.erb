@@ -48,10 +48,27 @@
                   <i class="fa fa-stethoscope fa-fw"></i>Services <span class="caret"></span></a>
                   <% end %> 
                 <ul role="menu" class="dropdown-menu">
-                    <li><a href="">Menu item</a></li>
-                    <li><a href="">Menu item</a></li>
-                    <li><a href="">Menu item</a></li>
-                    <li><a href="">Menu item</a></li>
+                    <li><%= link_to "Appointments", appointments_path %></li>
+                    <li><%= link_to "Nurses' Clinic", nursesclinic_path %></li>
+                    <li><%= link_to "Immunizations", immunizations_path %></li>
+                    <li><%= link_to "ADHD", adhd_path %></li>
+                    <li><%= link_to "HIV Testing", hivtesting_path %></li>
+                    <li><a href="http://counseling.ucmerced.edu/"> Counseling (CAPS)</a></li>
+                    <li>
+                            <%= link_to womenshealth_path do %>
+                            <i class="fa fa-female fa-fw"></i>  Women's Health
+                            <% end %>
+                    </li>
+                    <li>
+                            <%= link_to menshealth_path do %>
+                            <i class="fa fa-male fa-fw"></i>  Men's Health
+                            <% end %>
+                    </li>
+                    <li>
+                            <%= link_to travelclinic_path do %>
+                            <i class="fa fa-plane fa-fw"></i>  Travel Clinic
+                            <% end %>
+                    </li>
                 </ul>
             </li>
 
