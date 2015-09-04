@@ -31,6 +31,7 @@
 
 .navbar {
   border: 0;
+
 }
 
 .navbar-default {
@@ -267,7 +268,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 }
 
 .canvas-menu.mini-navbar .nav-second-level {
-  background: darken($nav-bg, 3%);
+  background: darken($nav-bg, 3%); 
 }
 
 .mini-navbar li.active .nav-second-level {
@@ -400,10 +401,12 @@ body.canvas-menu .navbar-static-side {
   width: $sidebar-width;
   z-index: 2001;
   height: 100%;
+
 }
 
 body.fixed-sidebar.mini-navbar .navbar-static-side {
   width: 0px;
+
 }
 
 body.fixed-sidebar.mini-navbar #page-wrapper {
@@ -443,7 +446,7 @@ body.canvas-menu.mini-navbar .navbar-default .nav > li > .nav-second-level li a 
 
 .fixed-sidebar.mini-navbar li.active .nav-second-level,
 .canvas-menu.mini-navbar li.active .nav-second-level {
-  left: 0px
+  left: 0px;
 }
 
 body.fixed-sidebar.mini-navbar .navbar-default .nav > li > a,
