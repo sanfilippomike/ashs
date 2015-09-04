@@ -18,11 +18,48 @@
 
                             <div class="feed-element">
                                 <a href="<%= url_for :controller => 'appviews', :action => 'profile' %>" class="pull-left">
+                                <i class="fa fa-beer fa-2x"></i>
+                                </a>
+                                <div class="media-body ">
+                                    <strong>To Drink or not To Drink?</strong>
+                                    <small class="text-navy">09.02.2015</small>
+                                    <br>
+                                    Being a college student here at UC Merced means being faced with the responsibility to make decisions regarding your health and safety. An example of a situation that you may encounter in college is having to make decisions regarding alcohol use.
+                                    <br><br>
+                                    Irresponsible alcohol use can have serious consequences: 
+                                    <ul>
+                                    <li> More than 1800 college students die each year from alcohol related unintentional injuries </li>
+                                    <li>More than 600,000 students are unintentionally injured each year while under the influence of alcohol
+                                    </li>
+                                    <li> Irresponsible alcohol use can also lead to sexual abuse, unsafe sex, assault, drunk driving, and academic problems.
+                                    </li>
+                                    </ul>
+                                    Abstaining from alcohol is always the safest choice to make, but if you do decide to drink, there are some things you can do to decrease your risk of alcohol-related harm:
+                                    <ul>
+                                    <li>Avoid drinking games</li>
+                                    <li>Know your limits of alcohol consumption, set your limit and keep track of your alcohol consumption </li>
+                                    <li>Eat before and while you are drinking</li>
+                                    <li>Always have a designated driver</li>
+                                    <li>Alternate non-alcoholic drinks with those containing alcohol</li>
+                                    </ul>
+                                    If you think you may have a problem with alcohol please make an appointment at the Student Health Center at 209-228-2273
+
+                                    <br>
+                                
+                                </div>
+                            </div>
+
+                            <div class="feed-element">
+                                <a href="<%= url_for :controller => 'appviews', :action => 'profile' %>" class="pull-left">
                                 <img alt="image" class="img-circle" src="<%= image_url 'bobcat.svg' %>">
                                 </a>
                                 <div class="media-body ">
-                                    <strong>Welcome Bobcat!</strong> Welcome to our new Health Services website.<br>
+                                    <strong>Welcome Bobcat!</strong>
+                                    <br>
                                     <small class="text-navy">08.24.2015</small>
+                                    <br>
+                                     Welcome to our new Health Services website.<br>
+
                                 </div>
                             </div>
 
@@ -33,9 +70,11 @@
     </div>
     <div class="col-md-6">
 
-
-    <img alt="image" align = "middle" class="img-responsive" src="<%= image_path('checkupnumber.jpg') %>">
-
+    <a href="/appointments">
+        <img alt="image" align = "middle" class="img-responsive" src="<%= image_path('checkupnumber.jpg') %>">
+    </a>
+    <br>
+                   <center>  <a href="/alerts"><p class="label label-danger"><i class="fa fa-exclamation-triangle"></i> Learn about important health alerts!</p> </a></center>
     </div>
     <div class="col-md-3">
         <a href="https://ucmerced.az1.qualtrics.com/SE/?SID=SV_enCBE1Q0BnTFPVP" target="_blank">
@@ -52,25 +91,11 @@
             </div>
         </a>
         <div class="statistic-box">
-            <h4>
-                Project Beta progress
-            </h4>
-            <p>
-                You have two project with not compleated task.
-            </p>
-            <div class="row text-center">
-                <div class="col-lg-6">
-                    <canvas id="polarChart" width="80" height="80"></canvas>
-                    <h5>Kolter</h5>
-                </div>
-                <div class="col-lg-6">
-                    <canvas id="doughnutChart" width="78" height="78"></canvas>
-                    <h5>Maxtor</h5>
-                </div>
-            </div>
-            <div class="m-t">
-                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-            </div>
+
+
+            <!--Twitter-->
+        <a class="twitter-timeline" href="https://twitter.com/UCMHeroes" data-widget-id="639523543982587904">Tweets by @UCMHeroes</a>
+
 
         </div>
     </div>

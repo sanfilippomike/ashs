@@ -138,5 +138,7 @@ Myapp::Application.routes.draw do
   match "/parents" => "appviews#parents", via: [:get, :post]
   match "/healthpromotion" => "appviews#healthpromotion", via: [:get, :post]
   match "/heroes" => "appviews#heroes", via: [:get, :post]
-
+  match "/marijuanafacts" => "appviews#marijuanafacts", via: [:get, :post]
+  match "/sevendimensions" => "appviews#sevendimensions", via: [:get, :post]
+  match "/anthemattack" => "appviews#anthemattack", via: [:get, :post]
   end
